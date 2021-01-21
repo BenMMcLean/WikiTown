@@ -31,6 +31,7 @@ class DocumentGenerator(
         template.process(data, outputWriter)
 
         return String(outputStream.toByteArray(), StandardCharsets.UTF_8)
+            .replace(" {2,}".toRegex(), " ")
     }
 
     private fun getMonthName(): String {
