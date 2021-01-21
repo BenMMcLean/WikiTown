@@ -16,7 +16,7 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 
     // https://mvnrepository.com/artifact/org.freemarker/freemarker
-    implementation: 'org.freemarker:freemarker:2.3.30'
+    implementation 'org.freemarker:freemarker:2.3.30'
 }
 
 test {
