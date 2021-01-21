@@ -1,9 +1,6 @@
 package au.com.origma.wikitown
 
-import au.com.origma.wikitown.domain.Infobox
-import au.com.origma.wikitown.domain.Section
-import au.com.origma.wikitown.domain.TextTemplate
-import au.com.origma.wikitown.domain.WikiDocument
+import au.com.origma.wikitown.domain.*
 import au.com.origma.wikitown.output.DocumentGenerator
 import java.lang.Exception
 
@@ -19,7 +16,8 @@ class Main {
                 Infobox(
                     "Australian place",
                     mapOf(
-                        "type" to TextTemplate("town")
+                        "type" to TextTemplate("town"),
+                        "coord" to CoordTemplate(100.0, 100.0, "title")
                     )
                 ),
                 "Test",
