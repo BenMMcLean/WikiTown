@@ -17,7 +17,8 @@ class Main {
                     "Australian place",
                     mapOf(
                         "type" to TextTemplate("town"),
-                        "coord" to CoordTemplate(100.0, 100.0, "title")
+                        "coord" to CoordTemplate(100.0, 100.0, "title"),
+                        "link" to LinkTemplate("test", "test")
                     )
                 ),
                 "Test",
@@ -25,7 +26,13 @@ class Main {
                     Section(
                         "Test Section",
                         "Test Content",
-                        null
+                        listOf(
+                            Section(
+                                "Sub",
+                                "Sub",
+                                null
+                            )
+                        )
                     )
                 )
             )

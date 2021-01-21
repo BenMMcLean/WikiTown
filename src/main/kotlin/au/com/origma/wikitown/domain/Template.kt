@@ -5,7 +5,7 @@ interface Template {
 }
 
 enum class TemplateType {
-    TEXT, INFOBOX, COORD
+    TEXT, INFOBOX, COORD, LINK
 }
 
 data class TextTemplate(
@@ -20,4 +20,11 @@ data class CoordTemplate(
     val display: String? = null
 ): Template {
     override val type = TemplateType.COORD
+}
+
+data class LinkTemplate(
+    val link: String,
+    val title: String? = null
+): Template {
+    override val type = TemplateType.LINK
 }

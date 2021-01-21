@@ -8,7 +8,7 @@
 ${document.content}
 
 <#list document.sections as section>
-<@sec.section level=2 section=section/>
+<@sec.section 2 section/>
 </#list>
 
 ==References==
