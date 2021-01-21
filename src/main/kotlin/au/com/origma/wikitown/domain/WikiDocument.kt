@@ -11,9 +11,12 @@ data class Section(
 ): ContentHolder
 
 data class Infobox(
-    val type: String,
+    val infoboxType: String,
     val values: Map<String, Template>
-)
+): Template {
+
+    override val type = TemplateType.INFOBOX
+}
 
 data class WikiDocument(
     val infobox: Infobox?,

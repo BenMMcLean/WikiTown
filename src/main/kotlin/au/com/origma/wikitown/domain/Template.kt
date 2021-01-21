@@ -5,7 +5,7 @@ interface Template {
 }
 
 enum class TemplateType {
-    TEXT
+    TEXT, INFOBOX
 }
 
 data class TextTemplate(
